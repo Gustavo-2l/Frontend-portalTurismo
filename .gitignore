@@ -1,0 +1,64 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretórios de dependências
+node_modules/
+vendor/
+
+# Ambientes virtuais (Python)
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Arquivos de log e banco de dados local
+*.log
+*.sqlite3
+
+# Arquivos de build/output
+
+build/
+out/
+target/
+
+# Arquivos temporários de IDEs e editores
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Arquivos de configuração pessoais
+*.sublime-workspace
+*.sublime-project
+*.iml
+
+# Arquivos de cache
+__pycache__/
+*.py[cod]
+*.class
+.cache/
+.nyc_output/
+coverage/
+
+# Configurações de testes
+coverage.xml
+.jest/
+.noseids
+
+# Arquivos de ambiente
+.env.local
+.env.*.local
+.env.test
+
+# Arquivos do Git
+*.orig
+
+# Outros
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
