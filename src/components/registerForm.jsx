@@ -10,17 +10,17 @@ const RegisterForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5000/api/user", {
-                nome,
+            const response = await axios.post("https://backend-poratlturismo.onrender.com/api/users", {
+                name : nome,
                 email,
-                senha,  // corrigido aqui
+                password : senha,  // corrigido aqui
             });
             const userData = response.data;
             localStorage.setItem("user", JSON.stringify(userData));
-            alert("Usuário logado com sucesso!!");
+            alert("Usuário cadastrado com sucesso!!");
             navigate("/");
         } catch (error) {
-            console.error("Erro ao conectar ao servidor", error);
+            console.error("Erro ao cadastrar novo usuario", error);
             alert("Erro ao conectar ao servidor");
         }
     }
